@@ -11,3 +11,4 @@ beautifulsoup4
 lxml
 finnhub-python
 python-dotenv
+huggingface-hub
