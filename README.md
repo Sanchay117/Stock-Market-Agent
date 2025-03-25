@@ -4,8 +4,8 @@ A FastAPI-based stock market assistant that fetches real-time stock information,
 
 ## Features
 
-- Fetches the latest stock market prices for the requested ticker/stock.
-- Provides AI-based stock recommendations using LangChain and OpenAI/Claude models.
+- Fetches the latest stock market prices for the requested ticker/stock using the Finnhub API.
+- Provides AI-based stock recommendations using LangChain and various LLM models through the HuggingFace API.
 - RESTful API endpoints to fetch data and AI analysis.
 - Integrates with DuckDuckGo for the latest news.
 
