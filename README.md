@@ -19,6 +19,12 @@ app/
 ├── requirements.txt      # Python dependencies
 ```
 
+## Limitations
+
+The project can only list US based stocks right now as the free tier of the finnhub(API I am using) doesn't support other stocks.
+
+Also YahooFinance was only allowing me like 5 queries an hour making development extremely difficult because of which I had to go with the Finnhub API. 
+
 ## ✅ Deployed
 The project is live!
 
