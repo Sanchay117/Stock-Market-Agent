@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException, Query
-from stock_fetcher import get_info
-from langchain_agent import get_stock_recommendation
+from app.stock_fetcher import get_info
+from app.langchain_agent import get_stock_recommendation
 
 app = FastAPI()
 

@@ -2,7 +2,7 @@ from langchain_community.tools import Tool
 from langchain.prompts import PromptTemplate
 from langchain.llms import HuggingFaceHub
 from langchain.agents import initialize_agent
-from stock_fetcher import get_info
+from app.stock_fetcher import get_info
 import os
 
 # Initialize Hugging Face model (Replace with your Hugging Face API key)
