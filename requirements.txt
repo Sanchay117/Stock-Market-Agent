@@ -7,4 +7,4 @@ requests
 pydantic
 beautifulsoup4
 lxml
-yfinance
+finnhub
