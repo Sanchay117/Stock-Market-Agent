@@ -3,9 +3,10 @@ from langchain.prompts import PromptTemplate
 from langchain.llms import HuggingFaceHub
 from langchain.agents import initialize_agent
 from stock_fetcher import get_info
+import os
 
 # Initialize Hugging Face model (Replace with your Hugging Face API key)
-HUGGINGFACEHUB_API_TOKEN = ""
+HUGGINGFACEHUB_API_TOKEN = os.environ.get("HUGGINGFACE_API_TOKEN")
 
 llm = HuggingFaceHub(
     repo_id="HuggingFaceH4/zephyr-7b-alpha",   # You can replace this with any conversational Hugging Face model

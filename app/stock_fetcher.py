@@ -1,7 +1,8 @@
+import os
 import finnhub
 from duckduckgo_search import DDGS
 
-finnhub_client = finnhub.Client(api_key="")
+finnhub_client = finnhub.Client(api_key=os.environ.get("FINNHUB_API_KEY"))
 
 def get_info(ticker: str, num_results: int = 1):
     try:
