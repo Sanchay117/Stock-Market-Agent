@@ -10,3 +10,4 @@ pydantic
 beautifulsoup4
 lxml
 finnhub
+python-dotenv
