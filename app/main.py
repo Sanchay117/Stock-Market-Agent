@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException, Query
 from stock_fetcher import get_info
+from langchain_agent import get_stock_recommendation
 
 app = FastAPI()
 
@@ -16,4 +17,6 @@ def ticker(name: str = Query(..., description="Ticker symbol, e.g., AAPL, TSLA")
     if result == -1:
         raise HTTPException(status_code=404, detail=f"Stock {name} not found or data unavailable")
     else:
+        recommendation = get_stock_recommendation(name)
+        result['AI analysis'] = recommendation
         return result
