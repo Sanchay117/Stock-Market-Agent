@@ -19,7 +19,14 @@ app/
 ├── requirements.txt      # Python dependencies
 ```
 
-## Setup Instructions
+## ✅ Deployed
+The project is live!
+
+Home: https://web-production-d0984.up.railway.app/
+
+Example endpoint: https://web-production-d0984.up.railway.app/ticker?name=TSLA
+
+## Setup Locally
 
 1. Clone the repository
 
